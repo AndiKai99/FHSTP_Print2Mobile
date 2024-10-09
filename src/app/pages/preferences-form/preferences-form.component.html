@@ -1,0 +1,28 @@
+<h1 class="header">SpinTendo Einstellungen</h1>
+<mat-card class="form-card">
+  <form (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline">
+      <mat-label>Anzahl der Spieler</mat-label>
+      <input matInput type="number" [(ngModel)]="players" name="players" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Bevorzugte Kategorien</mat-label>
+      <mat-select [(ngModel)]="categories" name="categories" multiple>
+        <mat-option value="action">Action</mat-option>
+        <mat-option value="adventure">Adventure</mat-option>
+        <mat-option value="puzzle">Puzzle</mat-option>
+        <mat-option value="sports">Sports</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Spielzeit (in Minuten)</mat-label>
+      <input matInput type="number" [(ngModel)]="time" name="time" required>
+    </mat-form-field>
+
+    <div class="submit-btn">
+      <button mat-raised-button color="primary" type="submit">Zum Wheelspin!</button>
+    </div>
+  </form>
+</mat-card>

@@ -1,0 +1,10 @@
+<div class="wheel-container">
+  <div class="wheel" [ngStyle]="{'transform': 'rotate(' + rotationDegrees + 'deg)'}">
+    <div *ngFor="let theme of themes; let i = index"
+         class="segment"
+         [ngStyle]="getSegmentStyle(i)">
+      <span>{{ theme }}</span>
+    </div>
+  </div>
+  <button (click)="spinWheel()">Spin the Wheel</button>
+</div>

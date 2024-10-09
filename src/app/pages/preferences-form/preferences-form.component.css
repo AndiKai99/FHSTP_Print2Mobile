@@ -1,0 +1,27 @@
+body {
+  background-color: #f4f4f4;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  text-align: center;
+  color: #E60012; /* Nintendo Rot */
+  font-size: 2.5em;
+  margin-top: 20px;
+}
+
+.form-card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.submit-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.mat-card {
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
